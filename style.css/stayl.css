@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(https://static.vecteezy.com/system/resources/previews/002/536/524/large_2x/dark-blue-background-with-curved-lines-colorful-illustration-with-curved-lines-pattern-for-websites-landing-pages-vector.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(255, 235, 205);
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 2% 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.logo__casa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 15px;
+    text-decoration-line: none;
+    color: rgb(211, 152, 36);
+}
+a{
+    text-decoration: none;
+    color: #c74b4bae;
+}
+.br{
+    color: red;
+}
+
+.logo__casa img {
+    height: 35px;
+    width: 35px;
+}
+
+.logo__casa:hover {
+    color: #cd7051;
+    
+}
+
+.portada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 10%;
+    flex-wrap: wrap;
+}
+
+.contenido__portada {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo__portada {
+    font-size: 32px;
+    font-family: 'Krona One', sans-serif;
+}
+
+.juan__foto {
+    width: 45%;
+    border-radius: 36px;
+    margin: 5px;
+}
+
+.footer {
+    background-color: rgba(255, 0, 0, 0.339);
+    text-align: center;
+    padding: 24px;
+    color: #b6a1a1;
+    font-size: 20px;
+}
+
+@media (max-width: 1000px) {
+    .portada {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido__portada,
+    .juan__foto {
+        width: 80%;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .logo__casa {
+        margin: 10px 0;
+    }
+
+    .portada {
+        flex-direction: column;
+        margin: 10% 5%;
+    }
+
+    .contenido__portada,
+    .juan__foto {
+        width: 100%;
+    }
+
+    .contenido__portada {
+        text-align: center;
+    }
+}
